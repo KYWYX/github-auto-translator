@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Auto Translator",
+  "version": "1.0.0",
+  "description": "翻译 GitHub 页面中的文本内容，支持中文和原文/译文切换。",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["https://github.com/*", "https://*.github.com/*", "https://translate.googleapis.com/*", "https://translate.argosopentech.com/*", "https://api.mymemory.translated.net/*", "https://libretranslate.com/*"],
+  "action": {"default_title": "GitHub Auto Translator", "default_popup": "popup.html"},
+  "content_scripts": [{"matches": ["https://github.com/*", "https://*.github.com/*"], "js": ["content.js"], "css": ["styles.css"], "run_at": "document_idle"}],
+  "background": {"service_worker": "background.js"}
+}
