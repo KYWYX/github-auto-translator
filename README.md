@@ -1,6 +1,7 @@
 # GitHub Auto Translator
 
 GitHub 自动翻译浏览器扩展，默认将可见文本翻译为简体中文，并支持原文/译文切换。
+*注意本工具由AI生成*
 
 ## 安装
 
